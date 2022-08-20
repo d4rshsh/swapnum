@@ -1,36 +1,22 @@
-﻿namespace swapnum
+﻿namespace aug17product
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            int a, b;
-            Console.WriteLine("Enter numbers");
+            int a,b,c;
+            Console.WriteLine("---Problem 2---");
+            Console.WriteLine("Product of three numbers");
+            Console.WriteLine("Enter number 1");
             a = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter number 2");
             b = Convert.ToInt32(Console.ReadLine());
-            swap(a, b);
-            Console.WriteLine("Actual numbers: {0} and {1}", a, b);
-            gswap(ref a, ref b);
-            Console.WriteLine("Actual numbers: {0} and {1}", a, b);
+            Console.WriteLine("Enter number 3");
+            c = Convert.ToInt32(Console.ReadLine());
+            double product;
+            product = a * b * c;
+            Console.WriteLine("Product is" + product);
             Console.ReadLine();
-        }
-        static void swap(int a, int b)
-        {
-            int c;
-            c = a;
-            a = b;
-            b = c;
-            Console.WriteLine("Swapped numbers: {0} and {1}", a, b);
-        }
-        static void gswap(ref int a, ref int b)
-        {
-            int c;
-            c = a;
-            a = b;
-            b = c;
-            Console.WriteLine("Swapped numbers: {0} and {1}", a, b);
-
-
         }
     }
 }
