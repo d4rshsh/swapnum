@@ -4,11 +4,18 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Problem6 - Input Age");
-            int age;
-            Console.WriteLine("Enter your age");
-            age = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("You look older than {0}", age);
+            Console.WriteLine("Problem 7 -- Pattern");
+            int n;
+            Console.WriteLine("Enter digit for pattern");
+            n = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < 4; i++)
+            {
+                if (i % 2 == 0)
+                    Console.WriteLine("{0} {0} {0} {0}", n);
+                else
+                    Console.WriteLine("{0}{0}{0}{0}", n);
+
+            }
             Console.ReadLine();
         }
     }
