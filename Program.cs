@@ -4,19 +4,12 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Problem 12 - String check");
-            string name = String.Empty;
-            Console.WriteLine("Enter text");
-            name = Console.ReadLine();
-            int p = Int32.Parse(name);
-            if (!String.IsNullOrEmpty(name))
-            {
-                Console.WriteLine("string is {0}", p);
-            }
-            else
-            {
-                Console.WriteLine("may be null or number");
-            }
+            Console.WriteLine("Problem 15 - USD to INR conversion");
+            Console.WriteLine("Enter amount of USD");
+            int usd;
+            usd = Convert.ToInt32(Console.ReadLine());
+            double rupee = 79.62 * usd;
+            Console.WriteLine("${0}  is {1} INR",usd, rupee);
             Console.ReadLine();
         }
     }
