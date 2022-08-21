@@ -4,18 +4,19 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine(" Problem 13 - metre to kilometre conversion");
-            int m;
-            Console.WriteLine("Enter metres");
-            m = Convert.ToInt32(Console.ReadLine());
-            float km = m / 1000;
-            Console.WriteLine("meter to km is {0}", km);
-            int kilo;
-            Console.WriteLine("Enter kilometer");
-            kilo = Convert.ToInt32(Console.ReadLine());
-            int metre;
-            metre = 1000 * kilo;
-            Console.WriteLine("km to meter is {0}", metre);
+            Console.WriteLine(" Problem 12 - String check");
+            string name = String.Empty;
+            Console.WriteLine("Enter text");
+            name = Console.ReadLine();
+            int p = Int32.Parse(name);
+            if (!String.IsNullOrEmpty(name))
+            {
+                Console.WriteLine("string is {0}", p);
+            }
+            else
+            {
+                Console.WriteLine("may be null or number");
+            }
             Console.ReadLine();
         }
     }
