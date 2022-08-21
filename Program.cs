@@ -4,18 +4,28 @@
     {
         static void Main(string[] args)
         {
-            int a,b,c;
-            Console.WriteLine("---Problem 2---");
-            Console.WriteLine("Product of three numbers");
-            Console.WriteLine("Enter number 1");
+            Console.WriteLine("--Problem--3");
+            Console.WriteLine("Arithmetic Operations - Add,Sub,Div,Mul,Rem");
+            int a, b;
+            Console.WriteLine("Enter the first number");
             a = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter number 2");
+            Console.WriteLine("Enter the second number");
             b = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("Enter number 3");
-            c = Convert.ToInt32(Console.ReadLine());
-            double product;
-            product = a * b * c;
-            Console.WriteLine("Product is" + product);
+            Console.WriteLine("Addition");
+            int add = a + b;
+            Console.WriteLine("{0} + {1}={2}", a, b, add);
+            Console.WriteLine("Subtraction");
+            int sub = a - b;
+            Console.WriteLine("{0}-{1}={2}", a, b, sub);
+            Console.WriteLine("Multiplication");
+            int prod = a * b;
+            Console.WriteLine("{0}*{1}={2}", a, b, prod);
+            Console.WriteLine("division");
+            float div = a / b;
+            Console.WriteLine("{0}/{1}={2}", a, b, div);
+            Console.WriteLine("Remainder");
+            int rem = a % b;
+            Console.WriteLine("{0} mod {1}={2}", a, b, rem);
             Console.ReadLine();
         }
     }
